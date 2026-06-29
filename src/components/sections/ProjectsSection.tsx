@@ -14,7 +14,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
       <div className="grid gap-6">
         {projects.map((project) => (
           <article
-            className="group rounded-2xl border border-white/[0.06] bg-white/[0.025] p-5 transition hover:border-orange-500/30 hover:bg-orange-500/[0.035] sm:p-6"
+            className="group rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition hover:border-orange-500/40 hover:bg-orange-500/[0.06] sm:p-6"
             key={project.id}
           >
             <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
@@ -25,7 +25,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             <div className="mt-5 flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
-                  className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs text-neutral-400"
+                  className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-neutral-400"
                   key={tag}
                 >
                   {tag}
