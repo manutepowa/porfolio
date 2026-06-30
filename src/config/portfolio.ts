@@ -55,6 +55,16 @@ export const portfolio: PortfolioConfig = {
 
   projects: [
     {
+      id: "inet2you",
+      name: "Inet2you",
+      url: "https://comunicacion.umh.es/2025/10/31/el-parque-cientifico-de-la-umh-lanza-inet2you-una-red-digital-que-conecta-empresas-inversores-e-investigadores/",
+      year: "2025",
+      description:
+        "Red digital impulsada por el Parque Científico de la UMH que conecta start-ups, pymes, investigadores, inversores y entidades para fomentar la cooperación y la innovación. Integra recomendaciones personalizadas con IA, una agenda de eventos del ecosistema, un repositorio vivo de contenidos exclusivos y un entorno seguro para compartir información estratégica con accesos controlados.",
+      tags: ["React", "TypeScript", "Node.js", "AI", "Red de Innovación"],
+      featured: true,
+    },
+    {
       id: "atlas-ui",
       name: "Atlas UI",
       url: "https://example.com/atlas-ui",
