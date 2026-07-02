@@ -81,11 +81,11 @@ export function HeroSection({ identity, hero }: HeroSectionProps) {
 
   return (
     <section className="pb-16 pt-2 sm:pb-20">
-      <div className="mb-10 flex items-center justify-between gap-6">
+      <div className="mb-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
         <Avatar identity={identity} />
         <ul
           ref={techIconsRef}
-          className="t-avatar-group flex list-none items-center gap-2 sm:gap-3"
+          className="t-avatar-group flex flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-3"
           aria-hidden="true"
           onMouseLeave={() => setTechIconShifts(null, "out")}
         >
