@@ -1,13 +1,14 @@
 type SectionHeaderProps = {
-  title: string
-  meta?: string
+  title: string,
 }
 
-export function SectionHeader({ title, meta }: SectionHeaderProps) {
+export function SectionHeader({ title }: SectionHeaderProps) {
   return (
-    <header className="mb-4 flex items-baseline justify-between gap-6">
-      <h2 className="text-base font-semibold tracking-tight text-neutral-200">{title}</h2>
-      {meta ? <p className="font-mono text-xs tracking-[0.2em] text-neutral-500">{meta}</p> : null}
+    <header className="mb-4 flex items-baseline gap-6">
+      <h2 className="text-base font-semibold tracking-tight text-neutral-200">
+        {title}
+      </h2>
+      <span aria-hidden="true" className="h-px flex-1 bg-orange-500/25" />
     </header>
   )
 }
