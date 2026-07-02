@@ -5,21 +5,65 @@ import { TypeScript } from "../icons/tech/TypeScript"
 import { Nodejs } from "../icons/tech/Nodejs"
 import { ReactIcon } from "../icons/tech/ReactIcon"
 import { PayloadCMS } from "../icons/tech/PayloadCMS"
+import { Drupal } from "../icons/tech/Drupal"
 import { TailwindCSS } from "../icons/tech/TailwindCSS"
 import { Neovim } from "../icons/tech/Neovim"
 import { Linux } from "../icons/tech/Linux"
 import { OpenCode } from "../icons/tech/OpenCode"
 
 const techStack = [
-  { Icon: TypeScript, iconClassName: "size-6 rounded-sm" },
-  { Icon: Nodejs, iconClassName: "h-6 w-auto" },
-  { Icon: ReactIcon, iconClassName: "size-6" },
-  { Icon: PayloadCMS, iconClassName: "size-6" },
-  { Icon: TailwindCSS, iconClassName: "size-6" },
-  { Icon: Neovim, iconClassName: "h-6 w-auto" },
-  { Icon: Linux, iconClassName: "size-6" },
+  {
+    Icon: TypeScript,
+    label: "TypeScript",
+    url: "https://www.typescriptlang.org/",
+    iconClassName: "size-6 rounded-sm",
+  },
+  {
+    Icon: Nodejs,
+    label: "Node.js",
+    url: "https://nodejs.org/",
+    iconClassName: "h-6 w-auto",
+  },
+  {
+    Icon: ReactIcon,
+    label: "React",
+    url: "https://react.dev/",
+    iconClassName: "size-6",
+  },
+  {
+    Icon: PayloadCMS,
+    label: "Payload CMS",
+    url: "https://payloadcms.com/",
+    iconClassName: "size-6",
+  },
+  {
+    Icon: Drupal,
+    label: "Drupal",
+    url: "https://www.drupal.org/",
+    iconClassName: "size-6",
+  },
+  {
+    Icon: TailwindCSS,
+    label: "Tailwind CSS",
+    url: "https://tailwindcss.com/",
+    iconClassName: "size-6",
+  },
+  {
+    Icon: Neovim,
+    label: "Neovim",
+    url: "https://neovim.io/",
+    iconClassName: "h-6 w-auto",
+  },
+  {
+    Icon: Linux,
+    label: "Linux",
+    url: "https://www.kernel.org/",
+    iconClassName: "size-6",
+  },
   {
     Icon: OpenCode,
+    label: "OpenCode",
+    url: "https://opencode.ai/",
     iconClassName: "size-6 rounded-sm",
     itemClassName: "rounded-md bg-white/[0.04] ring-1 ring-white/10",
   },
@@ -86,25 +130,34 @@ export function HeroSection({ identity, hero }: HeroSectionProps) {
         <ul
           ref={techIconsRef}
           className="t-avatar-group flex flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-3"
-          aria-hidden="true"
+          aria-label="Tecnologías principales"
           onMouseLeave={() => setTechIconShifts(null, "out")}
         >
-          {techStack.map(({ Icon, iconClassName, itemClassName = "" }, i) => (
+          {techStack.map(({ Icon, label, url, iconClassName, itemClassName = "" }, i) => (
             <li
-              key={i}
-              className={`t-avatar flex size-7 cursor-pointer items-center justify-center ${itemClassName}`}
+              key={label}
+              className={`t-avatar flex size-7 items-center justify-center ${itemClassName}`}
               onMouseEnter={() => setTechIconShifts(i, "in")}
             >
-              <Icon
-                className={`${iconClassName} opacity-70 transition-opacity duration-200 hover:opacity-100`}
-              />
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Abrir la página oficial de ${label}`}
+                title={label}
+                className="flex size-full items-center justify-center"
+              >
+                <Icon
+                  className={`${iconClassName} opacity-70 transition-opacity duration-200 hover:opacity-100`}
+                />
+              </a>
             </li>
           ))}
         </ul>
       </div>
 
       <div ref={blockRef} className="t-stagger max-w-3xl">
-        <h1 className="t-stagger-line t-stagger-line--1 text-balance text-4xl font-normal leading-tight tracking-[-0.045em] text-white sm:text-5xl">
+        <h1 className="t-stagger-line t-stagger-line--1 text-balance text-3xl font-normal leading-tight tracking-[-0.045em] text-white sm:text-4xl lg:text-5xl">
           {hero.greeting}
           <br />
           <strong className="font-semibold">{hero.headline}</strong>

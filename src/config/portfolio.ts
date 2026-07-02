@@ -57,7 +57,7 @@ export const portfolio: PortfolioConfig = {
     {
       id: "perte-ai",
       name: "Digitalizazión del agua (Perte)",
-      url: "https://github.com/it-fumh/perte-ai",
+      url: "https://sederegantes.es",
       year: "2026",
       description:
         "IA aplicada al agua. Asistente conversacional que unifica datos hídricos dispersos y los transforma en análisis inteligente: tendencias, anomalías, visualizaciones e informes exportables para comunidades de regantes.",
