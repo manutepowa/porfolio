@@ -56,7 +56,7 @@ export const portfolio: PortfolioConfig = {
   projects: [
     {
       id: "perte-ai",
-      name: "PERTE AI",
+      name: "Digitalizazión del agua (Perte)",
       url: "https://github.com/it-fumh/perte-ai",
       year: "2026",
       description:
