@@ -4,7 +4,7 @@ export const portfolio: PortfolioConfig = {
   identity: {
     name: "Manuel Tercero",
     nickname: "manutepowa",
-    role: "Full Stack Engineer | AI Integration | AI SDKs · Node.js · ReactJS · TypeScript",
+    role: "Full Stack Engineer & AI Integration · Node.js, ReactJS, TypeScript",
     location: {
       city: "Granada",
       country: "ES",
@@ -25,7 +25,7 @@ export const portfolio: PortfolioConfig = {
     eyebrow: "Portafolio / 2026",
     greeting: "Hola. Soy Manuel —",
     headline:
-      "Full Stack Engineer | AI Integration | AI SDKs · Node.js · ReactJS · TypeScript",
+      "Full Stack Engineer & AI Integration · Node.js, ReactJS, TypeScript",
     description:
       "Diseño y construyo productos web completos: desde la experiencia de usuario y el sistema visual hasta la arquitectura frontend, APIs y despliegue. Me gusta convertir ideas complejas en interfaces claras, rápidas y mantenibles.",
   },
@@ -73,35 +73,6 @@ export const portfolio: PortfolioConfig = {
         "Red digital impulsada por el Parque Científico de la UMH que conecta start-ups, pymes, investigadores, inversores y entidades para fomentar la cooperación y la innovación. Integra recomendaciones personalizadas con IA, una agenda de eventos del ecosistema, un repositorio vivo de contenidos exclusivos y un entorno seguro para compartir información estratégica con accesos controlados.",
       tags: ["React", "TypeScript", "Node.js", "AI", "Red de Innovación"],
       featured: true,
-    },
-    {
-      id: "atlas-ui",
-      name: "Atlas UI",
-      url: "https://example.com/atlas-ui",
-      year: "2026",
-      description:
-        "Un sistema de componentes para dashboards técnicos con tablas densas, estados de carga claros, filtros persistentes y patrones accesibles para productos B2B.",
-      tags: ["React", "TypeScript", "Tailwind", "Design System"],
-      featured: true,
-    },
-    {
-      id: "signal-notes",
-      name: "Signal Notes",
-      url: "https://example.com/signal-notes",
-      year: "2025",
-      description:
-        "Aplicación local-first para organizar notas de investigación, convertirlas en tareas y mantener trazabilidad entre decisiones, fuentes y resultados.",
-      tags: ["Vite", "IndexedDB", "UX", "Local-first"],
-      featured: true,
-    },
-    {
-      id: "deploy-lab",
-      name: "Deploy Lab",
-      url: "https://example.com/deploy-lab",
-      year: "2025",
-      description:
-        "Laboratorio de despliegue para experimentar con pipelines, previews automáticos y checks de calidad antes de publicar productos frontend.",
-      tags: ["CI/CD", "Vercel", "Testing", "Automation"],
     },
   ],
 

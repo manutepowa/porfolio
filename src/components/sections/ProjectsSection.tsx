@@ -3,13 +3,13 @@ import { ExternalLink } from "../ui/ExternalLink"
 import { SectionHeader } from "../ui/SectionHeader"
 
 type ProjectsSectionProps = {
-  projects: Project[]
+  projects: Project[],
 }
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="pb-10 sm:pb-16">
-      <SectionHeader meta="2026" title="Proyectos Destacados" />
+      <SectionHeader title="Proyectos Destacados" />
 
       <div className="grid gap-6">
         {projects.map((project) => (
@@ -19,7 +19,9 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           >
             <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
               <ExternalLink label={project.name} url={project.url} />
-              <span className="font-mono text-xs tracking-[0.2em] text-neutral-500">{project.year}</span>
+              <span className="font-mono text-xs tracking-[0.2em] text-neutral-500">
+                {project.year}
+              </span>
             </div>
             <p className="leading-8 text-neutral-400">{project.description}</p>
             <div className="mt-5 flex flex-wrap gap-2">
