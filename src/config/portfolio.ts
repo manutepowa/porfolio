@@ -84,10 +84,11 @@ export const portfolio: PortfolioConfig = {
       role: "Full Stack Engineer",
       period: "2025 — presente",
       description:
-        "En Dropsense, agencia digital especializada en Drupal y desarrollo web, trabajo en proyectos complejos para administraciones públicas, universidades y empresas. Abordo desafíos de arquitectura, integración y escalabilidad en entornos Drupal, combinando la flexibilidad del ecosistema open source con prácticas modernas de desarrollo.",
+        "En Dropsense, agencia digital especializada en Drupal, Payload CMS y desarrollo web, trabajo en proyectos complejos para administraciones públicas, universidades y empresas. Abordo desafíos de arquitectura, integración y escalabilidad en entornos CMS tradicionales y headless, combinando la flexibilidad del ecosistema open source con prácticas modernas de desarrollo.",
       highlights: [
-        "Desarrollo de proyectos Drupal para instituciones como la UMH, Ayuntamiento de Alicante y otras entidades públicas",
+        "Desarrollo de proyectos Drupal y Payload CMS para instituciones como la UMH, Ayuntamiento de Alicante y otras entidades públicas",
         "Migraciones y actualizaciones de plataformas Drupal legacy a versiones modernas",
+        "Implementación de soluciones headless con Payload CMS para experiencias de contenido modernas, tipadas y escalables",
         "Integración de Drupal con servicios externos, APIs y entornos cloud",
         "Mantenimiento proactivo y soporte evolutivo de plataformas críticas",
         "Colaboración en un equipo multidisciplinar con perfil tecnológico y estratégico",
