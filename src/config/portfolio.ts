@@ -55,6 +55,16 @@ export const portfolio: PortfolioConfig = {
 
   projects: [
     {
+      id: "perte-ai",
+      name: "PERTE AI",
+      url: "https://github.com/it-fumh/perte-ai",
+      year: "2026",
+      description:
+        "IA aplicada al agua. Asistente conversacional que unifica datos hídricos dispersos y los transforma en análisis inteligente: tendencias, anomalías, visualizaciones e informes exportables para comunidades de regantes.",
+      tags: ["AI", "LLM", "Node.js", "TypeScript", "MCP", "Hidrología"],
+      featured: true,
+    },
+    {
       id: "inet2you",
       name: "Inet2you",
       url: "https://comunicacion.umh.es/2025/10/31/el-parque-cientifico-de-la-umh-lanza-inet2you-una-red-digital-que-conecta-empresas-inversores-e-investigadores/",
