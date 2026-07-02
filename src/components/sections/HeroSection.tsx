@@ -9,20 +9,20 @@ import { TypeScript } from "../icons/tech/TypeScript"
 import { Neovim } from "../icons/tech/Neovim"
 
 const techStack = [
-  { Icon: PayloadCMS, iconClassName: "size-5" },
+  { Icon: PayloadCMS, iconClassName: "size-6" },
   {
     Icon: OpenCode,
-    iconClassName: "size-5 rounded-sm",
+    iconClassName: "size-6 rounded-sm",
     itemClassName: "rounded-md bg-white/[0.04] ring-1 ring-white/10",
   },
-  { Icon: Nodejs, iconClassName: "h-5 w-auto" },
+  { Icon: Nodejs, iconClassName: "h-6 w-auto" },
   {
     Icon: Nextjs,
-    iconClassName: "size-5",
+    iconClassName: "size-6",
     itemClassName: "rounded-full bg-white/[0.04] ring-1 ring-white/10",
   },
-  { Icon: TypeScript, iconClassName: "size-5 rounded-sm" },
-  { Icon: Neovim, iconClassName: "h-5 w-auto" },
+  { Icon: TypeScript, iconClassName: "size-6 rounded-sm" },
+  { Icon: Neovim, iconClassName: "h-6 w-auto" },
 ]
 
 type HeroSectionProps = {
@@ -49,10 +49,10 @@ export function HeroSection({ identity, hero }: HeroSectionProps) {
           {techStack.map(({ Icon, iconClassName, itemClassName = "" }, i) => (
             <li
               key={i}
-              className={`flex size-6 items-center justify-center ${itemClassName}`}
+              className={`flex size-7 cursor-pointer items-center justify-center ${itemClassName}`}
             >
               <Icon
-                className={`${iconClassName} opacity-50 transition-opacity duration-200 hover:opacity-100`}
+                className={`${iconClassName} opacity-70 transition-opacity duration-200 hover:opacity-100`}
               />
             </li>
           ))}
