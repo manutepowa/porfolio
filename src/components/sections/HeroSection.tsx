@@ -1,6 +1,29 @@
 import { useEffect, useRef } from "react"
 import type { Identity, Hero } from "../../types/portfolio"
 import { Avatar } from "../ui/Avatar"
+import { PayloadCMS } from "../icons/tech/PayloadCMS"
+import { OpenCode } from "../icons/tech/OpenCode"
+import { Nodejs } from "../icons/tech/Nodejs"
+import { Nextjs } from "../icons/tech/Nextjs"
+import { TypeScript } from "../icons/tech/TypeScript"
+import { Neovim } from "../icons/tech/Neovim"
+
+const techStack = [
+  { Icon: PayloadCMS, iconClassName: "size-5" },
+  {
+    Icon: OpenCode,
+    iconClassName: "size-5 rounded-sm",
+    itemClassName: "rounded-md bg-white/[0.04] ring-1 ring-white/10",
+  },
+  { Icon: Nodejs, iconClassName: "h-5 w-auto" },
+  {
+    Icon: Nextjs,
+    iconClassName: "size-5",
+    itemClassName: "rounded-full bg-white/[0.04] ring-1 ring-white/10",
+  },
+  { Icon: TypeScript, iconClassName: "size-5 rounded-sm" },
+  { Icon: Neovim, iconClassName: "h-5 w-auto" },
+]
 
 type HeroSectionProps = {
   identity: Identity,
@@ -22,9 +45,18 @@ export function HeroSection({ identity, hero }: HeroSectionProps) {
     <section className="pb-16 pt-2 sm:pb-20">
       <div className="mb-10 flex items-center justify-between gap-6">
         <Avatar identity={identity} />
-        <p className="hidden font-mono text-xs uppercase tracking-[0.28em] text-neutral-600 sm:block">
-          {hero.eyebrow}
-        </p>
+        <ul className="hidden list-none items-center gap-3 sm:flex" aria-hidden="true">
+          {techStack.map(({ Icon, iconClassName, itemClassName = "" }, i) => (
+            <li
+              key={i}
+              className={`flex size-6 items-center justify-center ${itemClassName}`}
+            >
+              <Icon
+                className={`${iconClassName} opacity-50 transition-opacity duration-200 hover:opacity-100`}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div ref={blockRef} className="t-stagger max-w-3xl">
