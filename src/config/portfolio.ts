@@ -33,7 +33,7 @@ export const portfolio: PortfolioConfig = {
   social: {
     email: {
       label: "Email",
-      url: "mailto:hola@manutercero.dev",
+      url: "mailto:manutepowa@gmail.com",
       icon: "✉",
     },
     github: {
@@ -43,7 +43,7 @@ export const portfolio: PortfolioConfig = {
     },
     linkedin: {
       label: "LinkedIn",
-      url: "https://linkedin.com/in/manuel-tercero",
+      url: "https://www.linkedin.com/in/manueltercero",
       icon: "↗",
     },
     website: {
@@ -84,12 +84,13 @@ export const portfolio: PortfolioConfig = {
       role: "Full Stack Engineer",
       period: "2025 — presente",
       description:
-        "En Dropsense, agencia digital especializada en Drupal, Payload CMS y desarrollo web, trabajo en proyectos complejos para administraciones públicas, universidades y empresas. Abordo desafíos de arquitectura, integración y escalabilidad en entornos CMS tradicionales y headless, combinando la flexibilidad del ecosistema open source con prácticas modernas de desarrollo.",
+        "En Dropsense, agencia digital especializada en Drupal, Payload CMS, integración con IA y desarrollo web, trabajo en proyectos complejos para administraciones públicas, universidades y empresas. Abordo desafíos de arquitectura, automatización inteligente, integración de modelos de IA y escalabilidad en entornos CMS tradicionales y headless, combinando la flexibilidad del ecosistema open source con prácticas modernas de desarrollo.",
       highlights: [
+        "Integración de capacidades de IA en plataformas CMS para automatizar procesos, enriquecer contenidos y conectar datos con flujos de trabajo inteligentes",
         "Desarrollo de proyectos Drupal y Payload CMS para instituciones como la UMH, Ayuntamiento de Alicante y otras entidades públicas",
         "Migraciones y actualizaciones de plataformas Drupal legacy a versiones modernas",
         "Implementación de soluciones headless con Payload CMS para experiencias de contenido modernas, tipadas y escalables",
-        "Integración de Drupal con servicios externos, APIs y entornos cloud",
+        "Integración de Drupal y Payload CMS con servicios externos, APIs, modelos de IA y entornos cloud",
         "Mantenimiento proactivo y soporte evolutivo de plataformas críticas",
         "Colaboración en un equipo multidisciplinar con perfil tecnológico y estratégico",
       ],
@@ -101,9 +102,11 @@ export const portfolio: PortfolioConfig = {
       role: "Full Stack Engineer",
       period: "2017 — presente",
       description:
-        "En el Parque Científico de la UMH desarrollo soluciones web completas que conectan el ecosistema de innovación: plataformas de red empresarial, sistemas de gestión de contenido headless, portales institucionales y herramientas digitales para la transferencia de conocimiento. Trabajo en un entorno híbrido en Elche, combinando arquitectura frontend moderna con integraciones backend robustas.",
+        "En el Parque Científico de la UMH desarrollo soluciones web completas e integraciones con IA que conectan el ecosistema de innovación: plataformas de red empresarial, sistemas de gestión de contenido headless, portales institucionales y herramientas digitales para la transferencia de conocimiento. Trabajo en un entorno híbrido en Elche, combinando arquitectura frontend moderna, servicios backend robustos y capacidades inteligentes basadas en datos, automatización y modelos LLM.",
       highlights: [
+        "Diseño e integración de funcionalidades con IA para recomendación, análisis de información, automatización de procesos y asistencia conversacional",
         "Headless CMS con Strapi y PayloadCMS para plataformas de contenido flexibles y escalables",
+        "Conexión de modelos LLM, APIs y fuentes de datos internas para convertir información dispersa en experiencias digitales útiles",
         "Aplicaciones web con Drupal 8/9, incluyendo arquitecturas Headless Drupal vía JSON:API",
         "Interfaces interactivas con TypeScript, ReactJS y NextJS",
         "APIs y servicios backend eficientes con Node.js",
@@ -125,12 +128,13 @@ export const portfolio: PortfolioConfig = {
       role: "Grado en Ingeniería Informática",
       period: "2010 — 2016",
       description:
-        "Estudios de grado en Ingeniería Informática en la UMH, donde adquirí una base sólida en fundamentos de la computación, lenguajes de programación, arquitectura de sistemas y metodologías de desarrollo. Durante estos años aprendí a entender cómo funcionan las plataformas desde sus cimientos, desde el hardware hasta las capas de abstracción del software, y construí los cimientos técnicos que sostienen mi trabajo actual.",
+        "Estudios de grado en Ingeniería Informática en la UMH, donde adquirí una base sólida en fundamentos de la computación, lenguajes de programación, arquitectura de sistemas, datos y metodologías de desarrollo. Esta formación me dio la base técnica para entender cómo funcionan las plataformas desde sus cimientos y para abordar hoy integraciones con IA, automatización y sistemas inteligentes sobre arquitecturas web robustas.",
       highlights: [
         "Fundamentos de lenguajes de programación y paradigmas de desarrollo",
+        "Bases algorítmicas, modelado de datos e ingeniería del software aplicadas a sistemas inteligentes",
         "Arquitectura de computadores y sistemas operativos (Linux)",
         "Bases de datos, redes e ingeniería del software",
-        "Proyectos y prácticas que conectaron la teoría con problemas reales",
+        "Proyectos y prácticas que conectaron la teoría con problemas reales, integración de sistemas y automatización",
       ],
     },
   ],
@@ -142,7 +146,7 @@ export const portfolio: PortfolioConfig = {
     links: [
       {
         label: "Email",
-        url: "mailto:hola@manutercero.dev",
+        url: "mailto:manutepowa@gmail.com",
         icon: "✉",
       },
       {
@@ -152,7 +156,7 @@ export const portfolio: PortfolioConfig = {
       },
       {
         label: "LinkedIn",
-        url: "https://linkedin.com/in/manuel-tercero",
+        url: "https://www.linkedin.com/in/manueltercero",
         icon: "↗",
       },
     ],
