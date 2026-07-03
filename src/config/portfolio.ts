@@ -56,12 +56,24 @@ export const portfolio: PortfolioConfig = {
   projects: [
     {
       id: "perte-ai",
-      name: "Digitalizazión del agua (Perte)",
+      name: "Digitalización del agua (Perte)",
       url: "https://sederegantes.es",
       year: "2026",
       description:
         "IA aplicada al agua. Asistente conversacional que unifica datos hídricos dispersos y los transforma en análisis inteligente: tendencias, anomalías, visualizaciones e informes exportables para comunidades de regantes.",
       tags: ["AI", "LLM", "Node.js", "TypeScript", "MCP", "Hidrología"],
+      captures: [
+        {
+          src: "/projects/perte-ai/chat-mcp-bloque.png",
+          alt: "Bloque de chat con integración MCP del asistente PERTE AI",
+          caption: "Integración del protocolo MCP para conectar el asistente con fuentes de datos y herramientas externas.",
+        },
+        {
+          src: "/projects/perte-ai/uso-de-skills.png",
+          alt: "Uso de skills en el asistente PERTE AI",
+          caption: "Activación de skills especializadas para análisis hídrico, generación de informes y consultas estructuradas.",
+        },
+      ],
       featured: true,
     },
     {
@@ -72,6 +84,23 @@ export const portfolio: PortfolioConfig = {
       description:
         "Red digital impulsada por el Parque Científico de la UMH que conecta start-ups, pymes, investigadores, inversores y entidades para fomentar la cooperación y la innovación. Integra recomendaciones personalizadas con IA, una agenda de eventos del ecosistema, un repositorio vivo de contenidos exclusivos y un entorno seguro para compartir información estratégica con accesos controlados.",
       tags: ["React", "TypeScript", "Node.js", "AI", "Red de Innovación"],
+      captures: [
+        {
+          src: "/projects/inet2you/descargables.png",
+          alt: "Vista del repositorio de contenidos descargables de Inet2you",
+          caption: "Biblioteca de recursos exclusivos con documentos y materiales descargables del ecosistema.",
+        },
+        {
+          src: "/projects/inet2you/oportunidades.png",
+          alt: "Panel de oportunidades de cooperación de Inet2you",
+          caption: "Espacio donde descubrir y publicar oportunidades de colaboración e inversión.",
+        },
+        {
+          src: "/projects/inet2you/perfil.png",
+          alt: "Vista del perfil de usuario en Inet2you",
+          caption: "Perfil con accesos controlados para compartir información estratégica de forma segura.",
+        },
+      ],
       featured: true,
     },
   ],

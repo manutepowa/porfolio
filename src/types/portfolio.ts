@@ -39,7 +39,14 @@ export type Project = {
   year: string
   description: string
   tags: string[]
+  captures?: ProjectCapture[]
   featured?: boolean
+}
+
+export type ProjectCapture = {
+  src: string
+  alt: string
+  caption?: string
 }
 
 export type TimelineEntry = {
