@@ -113,7 +113,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           }}
           role="dialog"
         >
-          <div className="relative max-h-[88vh] w-full max-w-5xl overflow-y-auto rounded-3xl border border-white/10 bg-neutral-950/95 p-5 shadow-2xl shadow-black/70 sm:p-6">
+          <div className="relative max-h-[90vh] w-full max-w-6xl overflow-y-auto rounded-3xl border border-white/10 bg-neutral-950/95 p-5 shadow-2xl shadow-black/70 sm:p-6">
             <div className="mb-5 flex items-start justify-between gap-4">
               <div>
                 <p className="font-mono text-xs uppercase tracking-[0.25em] text-orange-300/80">
@@ -135,7 +135,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
               </button>
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-6">
               {activeProject.captures.map((capture) => (
                 <figure
                   className="overflow-hidden rounded-2xl border border-white/10 bg-black/40"
@@ -143,7 +143,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 >
                   <img
                     alt={capture.alt}
-                    className="aspect-video w-full object-cover"
+                    className="w-full h-auto object-contain"
                     loading="lazy"
                     src={capture.src}
                   />
