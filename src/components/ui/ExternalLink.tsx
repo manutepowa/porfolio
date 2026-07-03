@@ -8,7 +8,7 @@ type ExternalLinkProps = ExternalLinkType & {
 export function ExternalLink({ label, url, icon = "↗", className = "" }: ExternalLinkProps) {
   return (
     <a
-      className={`group inline-flex items-baseline gap-1 font-medium text-orange-500 decoration-orange-500/40 underline-offset-4 transition hover:text-orange-300 hover:decoration-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-500 ${className}`}
+      className={`group inline-flex items-baseline gap-1 font-medium text-accent decoration-accent/40 underline-offset-4 transition hover:text-accent-soft hover:decoration-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent ${className}`}
       href={url}
       rel="noreferrer"
       target={url.startsWith("http") ? "_blank" : undefined}

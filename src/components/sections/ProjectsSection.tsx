@@ -62,24 +62,24 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     <section className="pb-10 sm:pb-16">
       <SectionHeader title="Proyectos Destacados" />
 
-      <div className="grid gap-6">
+      <div className="grid divide-y divide-ink/10">
         {projects.map((project) => (
           <article
-            className="group rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition duration-200 ease-out hover:-translate-y-1 hover:border-orange-500/40 hover:bg-orange-500/[0.06] hover:shadow-xl hover:shadow-black/40 sm:p-6"
+            className="group py-6 transition-colors duration-200 first:pt-0 hover:bg-surface/30 sm:py-8"
             key={project.id}
           >
             <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
               <ExternalLink label={project.name} url={project.url} />
-              <span className="font-mono text-xs tracking-[0.2em] text-neutral-500">
+              <span className="font-mono text-xs tracking-[0.15em] text-ink-dim">
                 {project.year}
               </span>
             </div>
-            <p className="leading-8 text-neutral-400">{project.description}</p>
+            <p className="leading-8 text-ink-dim">{project.description}</p>
             <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
-                    className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-neutral-400"
+                    className="border border-ink/10 px-2 py-0.5 font-mono text-xs text-ink-dim"
                     key={tag}
                   >
                     {tag}
@@ -88,7 +88,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
               </div>
               {project.captures?.length ? (
                 <button
-                  className="inline-flex shrink-0 items-center justify-center rounded-full p-2 text-orange-300/80 transition duration-200 ease-out hover:-translate-y-0.5 hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-400/60 focus:ring-offset-2 focus:ring-offset-black"
+                  className="inline-flex shrink-0 items-center justify-center rounded-md border border-ink/10 p-2 text-ink-dim transition duration-200 ease-out hover:border-accent/40 hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent/60 focus:ring-offset-2 focus:ring-offset-bg"
                   onClick={() => setActiveProjectId(project.id)}
                   type="button"
                   aria-label={`Ver capturas de ${project.name}`}
@@ -105,7 +105,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         <div
           aria-labelledby="project-captures-title"
           aria-modal="true"
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm t-modal ${isClosing ? "is-closing" : "is-open"}`}
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-bg/85 p-4 backdrop-blur-sm t-modal ${isClosing ? "is-closing" : "is-open"}`}
           onClick={(event) => {
             if (event.target === event.currentTarget) {
               closeCaptures()
@@ -113,21 +113,21 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           }}
           role="dialog"
         >
-          <div className="relative max-h-[90vh] w-full max-w-6xl overflow-y-auto rounded-3xl border border-white/10 bg-neutral-950/95 p-5 shadow-2xl shadow-black/70 sm:p-6">
+          <div className="relative max-h-[90vh] w-full max-w-6xl overflow-y-auto rounded-xl border border-ink/10 bg-surface p-5 shadow-2xl shadow-black/70 sm:p-6">
             <div className="mb-5 flex items-start justify-between gap-4">
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.25em] text-orange-300/80">
-                  Capturas
+                <p className="font-mono text-xs tracking-[0.25em] text-accent">
+                  // capturas
                 </p>
                 <h3
-                  className="mt-2 text-2xl font-semibold text-white"
+                  className="mt-2 font-mono text-2xl font-semibold text-ink"
                   id="project-captures-title"
                 >
                   {activeProject.name}
                 </h3>
               </div>
               <button
-                className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-neutral-300 transition duration-200 ease-out hover:border-orange-500/50 hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-400/60"
+                className="rounded-md border border-ink/10 px-3 py-2 text-sm text-ink-dim transition duration-200 ease-out hover:border-accent/40 hover:text-ink focus:outline-none focus:ring-2 focus:ring-accent/60"
                 onClick={closeCaptures}
                 type="button"
               >
@@ -138,7 +138,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             <div className="grid gap-6">
               {activeProject.captures.map((capture) => (
                 <figure
-                  className="overflow-hidden rounded-2xl border border-white/10 bg-black/40"
+                  className="overflow-hidden rounded-lg border border-ink/10 bg-bg"
                   key={capture.src}
                 >
                   <img
@@ -148,7 +148,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                     src={capture.src}
                   />
                   {capture.caption ? (
-                    <figcaption className="border-t border-white/10 px-4 py-3 text-sm leading-6 text-neutral-400">
+                    <figcaption className="border-t border-ink/10 px-4 py-3 text-sm leading-6 text-ink-dim">
                       {capture.caption}
                     </figcaption>
                   ) : null}
