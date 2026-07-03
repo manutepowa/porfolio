@@ -5,17 +5,17 @@
   <path d="M18 50H46" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
   <defs>
     <linearGradient id="border" x1="8" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#A855F7"/>
+      <stop stop-color="#E5E7EB"/>
+      <stop offset="1" stop-color="#374151"/>
     </linearGradient>
     <linearGradient id="mark" x1="15" y1="20" x2="50" y2="45" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E5E7EB"/>
-      <stop offset="0.45" stop-color="#67E8F9"/>
-      <stop offset="1" stop-color="#C084FC"/>
+      <stop stop-color="#9CA3AF"/>
+      <stop offset="0.45" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#9CA3AF"/>
     </linearGradient>
     <linearGradient id="accent" x1="18" y1="50" x2="46" y2="50" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#A855F7"/>
+      <stop stop-color="#ff4d00"/>
+      <stop offset="1" stop-color="#ff6a1f"/>
     </linearGradient>
   </defs>
 </svg>
