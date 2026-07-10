@@ -103,6 +103,33 @@ export const portfolio: PortfolioConfig = {
       ],
       featured: true,
     },
+    {
+      id: "parque-cientifico-umh",
+      name: "Parque Científico UMH",
+      url: "https://www.parquecientificoumh.es/",
+      year: "2025",
+      description:
+        "Plataforma digital del Parque Científico de la UMH para conectar empresas, startups, investigadores y agentes del ecosistema de innovación. Centraliza programas, eventos, noticias, recursos y oportunidades de colaboración.",
+      tags: ["Innovación", "Emprendimiento", "Investigación"],
+      featured: true,
+    },
+    {
+      id: "plataforma-idiomas-umh",
+      name: "Plataforma de Idiomas UMH",
+      url: "https://www.idiomasumh.es/",
+      year: "2020",
+      description:
+        "Familia de plataformas EdTech desarrollada por el Centro de Idiomas de la UMH para que academias y centros educativos ofrezcan formación online y semipresencial de idiomas. El ecosistema integra BeEnglishLab para inglés, LlenguaLab para valenciano e HispaniaLab para español, con contenidos propios, ejercicios autocorregibles, tests de nivel, seguimiento del progreso y herramientas de gestión para centros y docentes. Los cursos incluyen hasta 90 horas de trabajo y preparación para certificaciones oficiales como Cambridge English y CIEACOVA.",
+      tags: [
+        "EdTech",
+        "E-learning",
+        "Plataforma educativa",
+        "Inglés",
+        "Valenciano",
+        "Español",
+      ],
+      featured: true,
+    },
   ],
 
   experience: [
