@@ -6,10 +6,10 @@ export const portfolio: PortfolioConfig = {
     nickname: "manutepowa",
     role: "Full Stack Engineer & AI Integration · Node.js, ReactJS, TypeScript",
     location: {
-      city: "Granada",
+      city: "Elda",
       country: "ES",
       alternateCity: "Remote",
-      alternateCountry: "EU",
+      alternateCountry: "ES",
     },
     avatar: "/avatar.webp",
     logo: "MT",
@@ -66,12 +66,14 @@ export const portfolio: PortfolioConfig = {
         {
           src: "/projects/perte-ai/chat-mcp-bloque.png",
           alt: "Bloque de chat con integración MCP del asistente PERTE AI",
-          caption: "Integración del protocolo MCP para conectar el asistente con fuentes de datos y herramientas externas.",
+          caption:
+            "Integración del protocolo MCP para conectar el asistente con fuentes de datos y herramientas externas.",
         },
         {
           src: "/projects/perte-ai/uso-de-skills.png",
           alt: "Uso de skills en el asistente PERTE AI",
-          caption: "Activación de skills especializadas para análisis hídrico, generación de informes y consultas estructuradas.",
+          caption:
+            "Activación de skills especializadas para análisis hídrico, generación de informes y consultas estructuradas.",
         },
       ],
       featured: true,
@@ -88,17 +90,20 @@ export const portfolio: PortfolioConfig = {
         {
           src: "/projects/inet2you/descargables.png",
           alt: "Vista del repositorio de contenidos descargables de Inet2you",
-          caption: "Biblioteca de recursos exclusivos con documentos y materiales descargables del ecosistema.",
+          caption:
+            "Biblioteca de recursos exclusivos con documentos y materiales descargables del ecosistema.",
         },
         {
           src: "/projects/inet2you/oportunidades.png",
           alt: "Panel de oportunidades de cooperación de Inet2you",
-          caption: "Espacio donde descubrir y publicar oportunidades de colaboración e inversión.",
+          caption:
+            "Espacio donde descubrir y publicar oportunidades de colaboración e inversión.",
         },
         {
           src: "/projects/inet2you/perfil.png",
           alt: "Vista del perfil de usuario en Inet2you",
-          caption: "Perfil con accesos controlados para compartir información estratégica de forma segura.",
+          caption:
+            "Perfil con accesos controlados para compartir información estratégica de forma segura.",
         },
       ],
       featured: true,
