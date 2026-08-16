@@ -4,11 +4,11 @@ export const portfolio: PortfolioConfig = {
   identity: {
     name: "Manuel Tercero",
     nickname: "manutepowa",
-    role: "Full Stack Engineer & AI Integration · Node.js, ReactJS, TypeScript",
+    role: "Full Stack Engineer especializado en productos e integraciones con IA",
     location: {
       city: "Elda",
       country: "ES",
-      alternateCity: "Remote",
+      alternateCity: "Remoto",
       alternateCountry: "ES",
     },
     avatar: "/avatar.webp",
@@ -18,39 +18,12 @@ export const portfolio: PortfolioConfig = {
   seo: {
     title: "Manuel Tercero | Full Stack Engineer",
     description:
-      "Portfolio personal de Manuel Tercero, desarrollador full-stack centrado en interfaces, producto y arquitectura frontend.",
+      "Portfolio de Manuel Tercero, Full Stack Engineer especializado en productos web e integraciones con IA.",
   },
 
   hero: {
-    eyebrow: "Portafolio / 2026",
-    greeting: "Hola. Soy Manuel —",
-    headline:
-      "Full Stack Engineer & AI Integration · Node.js, ReactJS, TypeScript",
     description:
-      "Diseño y construyo productos web completos: desde la experiencia de usuario y el sistema visual hasta la arquitectura frontend, APIs y despliegue. Me gusta convertir ideas complejas en interfaces claras, rápidas y mantenibles.",
-  },
-
-  social: {
-    email: {
-      label: "Email",
-      url: "mailto:manutepowa@gmail.com",
-      icon: "✉",
-    },
-    github: {
-      label: "GitHub",
-      url: "https://github.com/manutepowa",
-      icon: "↗",
-    },
-    linkedin: {
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/in/manueltercero",
-      icon: "↗",
-    },
-    website: {
-      label: "web",
-      url: "https://manutercero.dev",
-      icon: "↗",
-    },
+      "Convierto necesidades complejas en productos web claros y mantenibles, conectando experiencia de usuario, frontend, APIs e inteligencia artificial.",
   },
 
   projects: [
@@ -76,7 +49,6 @@ export const portfolio: PortfolioConfig = {
             "Activación de skills especializadas para análisis hídrico, generación de informes y consultas estructuradas.",
         },
       ],
-      featured: true,
     },
     {
       id: "inet2you",
@@ -84,7 +56,7 @@ export const portfolio: PortfolioConfig = {
       url: "https://comunicacion.umh.es/2025/10/31/el-parque-cientifico-de-la-umh-lanza-inet2you-una-red-digital-que-conecta-empresas-inversores-e-investigadores/",
       year: "2025",
       description:
-        "Red digital impulsada por el Parque Científico de la UMH que conecta start-ups, pymes, investigadores, inversores y entidades para fomentar la cooperación y la innovación. Integra recomendaciones personalizadas con IA, una agenda de eventos del ecosistema, un repositorio vivo de contenidos exclusivos y un entorno seguro para compartir información estratégica con accesos controlados.",
+        "Red digital del Parque Científico de la UMH que conecta empresas, investigadores e inversores. Reúne recomendaciones con IA, oportunidades, eventos y contenidos en un entorno con accesos controlados.",
       tags: ["React", "TypeScript", "Node.js", "AI", "Red de Innovación"],
       captures: [
         {
@@ -106,7 +78,6 @@ export const portfolio: PortfolioConfig = {
             "Perfil con accesos controlados para compartir información estratégica de forma segura.",
         },
       ],
-      featured: true,
     },
     {
       id: "parque-cientifico-umh",
@@ -116,7 +87,6 @@ export const portfolio: PortfolioConfig = {
       description:
         "Plataforma digital del Parque Científico de la UMH para conectar empresas, startups, investigadores y agentes del ecosistema de innovación. Centraliza programas, eventos, noticias, recursos y oportunidades de colaboración.",
       tags: ["Innovación", "Emprendimiento", "Investigación"],
-      featured: true,
     },
     {
       id: "plataforma-idiomas-umh",
@@ -124,7 +94,7 @@ export const portfolio: PortfolioConfig = {
       url: "https://www.idiomasumh.es/",
       year: "2020",
       description:
-        "Familia de plataformas EdTech desarrollada por el Centro de Idiomas de la UMH para que academias y centros educativos ofrezcan formación online y semipresencial de idiomas. El ecosistema integra BeEnglishLab para inglés, LlenguaLab para valenciano e HispaniaLab para español, con contenidos propios, ejercicios autocorregibles, tests de nivel, seguimiento del progreso y herramientas de gestión para centros y docentes. Los cursos incluyen hasta 90 horas de trabajo y preparación para certificaciones oficiales como Cambridge English y CIEACOVA.",
+        "Ecosistema EdTech del Centro de Idiomas de la UMH para formación online y semipresencial. Integra contenidos, ejercicios autocorregibles, tests de nivel, seguimiento y gestión académica para inglés, valenciano y español.",
       tags: [
         "EdTech",
         "E-learning",
@@ -133,9 +103,39 @@ export const portfolio: PortfolioConfig = {
         "Valenciano",
         "Español",
       ],
-      featured: true,
     },
   ],
+
+  openSource: {
+    profileUrl: "https://github.com/manutepowa",
+    projects: [
+      {
+        id: "payload-plugin-masquerade",
+        name: "Payload Plugin Masquerade",
+        description:
+          "Plugin para Payload CMS que permite a administradores cambiar temporalmente de usuario, navegar con sus permisos y regresar después a su propia sesión.",
+        repositoryUrl:
+          "https://github.com/manutepowa/payload-plugin-masquerade",
+        packageUrl: "https://www.npmjs.com/package/payload-plugin-masquerade",
+        installCommand: "pnpm add payload-plugin-masquerade",
+        tags: ["Payload CMS", "TypeScript", "Plugin"],
+        license: "MIT",
+        status: "active",
+      },
+      {
+        id: "payload-files-proxy",
+        name: "Payload Files Proxy",
+        description:
+          "Plugin de desarrollo que recupera bajo demanda los archivos de producción que todavía no existen en una instalación local de Payload CMS.",
+        repositoryUrl: "https://github.com/manutepowa/payload-files-proxy",
+        packageUrl: "https://www.npmjs.com/package/payload-files-proxy",
+        installCommand: "pnpm add payload-files-proxy",
+        tags: ["Payload CMS", "TypeScript", "Developer tooling"],
+        license: "MIT",
+        status: "active",
+      },
+    ],
+  },
 
   experience: [
     {
@@ -145,7 +145,7 @@ export const portfolio: PortfolioConfig = {
       role: "Full Stack Engineer",
       period: "2025 — presente",
       description:
-        "En Dropsense, agencia digital especializada en Drupal, Payload CMS, integración con IA y desarrollo web, trabajo en proyectos complejos para administraciones públicas, universidades y empresas. Abordo desafíos de arquitectura, automatización inteligente, integración de modelos de IA y escalabilidad en entornos CMS tradicionales y headless, combinando la flexibilidad del ecosistema open source con prácticas modernas de desarrollo.",
+        "Desarrollo plataformas para administraciones, universidades y empresas combinando CMS open source, arquitecturas headless, automatización e integraciones con IA.",
       highlights: [
         "Integración de capacidades de IA en plataformas CMS para automatizar procesos, enriquecer contenidos y conectar datos con flujos de trabajo inteligentes",
         "Desarrollo de proyectos Drupal y Payload CMS para instituciones como la UMH, Ayuntamiento de Alicante y otras entidades públicas",
@@ -163,7 +163,7 @@ export const portfolio: PortfolioConfig = {
       role: "Full Stack Engineer",
       period: "2017 — presente",
       description:
-        "En el Parque Científico de la UMH desarrollo soluciones web completas e integraciones con IA que conectan el ecosistema de innovación: plataformas de red empresarial, sistemas de gestión de contenido headless, portales institucionales y herramientas digitales para la transferencia de conocimiento. Trabajo en un entorno híbrido en Elche, combinando arquitectura frontend moderna, servicios backend robustos y capacidades inteligentes basadas en datos, automatización y modelos LLM.",
+        "Construyo plataformas que conectan el ecosistema de innovación, desde redes empresariales y portales institucionales hasta servicios backend e integraciones basadas en datos y modelos LLM.",
       highlights: [
         "Diseño e integración de funcionalidades con IA para recomendación, análisis de información, automatización de procesos y asistencia conversacional",
         "Headless CMS con Strapi y PayloadCMS para plataformas de contenido flexibles y escalables",
@@ -189,7 +189,7 @@ export const portfolio: PortfolioConfig = {
       role: "Grado en Ingeniería Informática",
       period: "2010 — 2016",
       description:
-        "Estudios de grado en Ingeniería Informática en la UMH, donde adquirí una base sólida en fundamentos de la computación, lenguajes de programación, arquitectura de sistemas, datos y metodologías de desarrollo. Esta formación me dio la base técnica para entender cómo funcionan las plataformas desde sus cimientos y para abordar hoy integraciones con IA, automatización y sistemas inteligentes sobre arquitecturas web robustas.",
+        "Base técnica en programación, algoritmos, datos, arquitectura de sistemas e ingeniería del software aplicada hoy a productos web, automatización e integraciones con IA.",
       highlights: [
         "Fundamentos de lenguajes de programación y paradigmas de desarrollo",
         "Bases algorítmicas, modelado de datos e ingeniería del software aplicadas a sistemas inteligentes",

@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Geist Pixel Square";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/GeistPixel-Square.woff2") format("woff2");
+}
+
 @theme {
   --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-pixel: "Geist Pixel Square", "IBM Plex Mono", monospace;
 
   --color-bg: #0c0a09;
   --color-surface: #1c1917;
@@ -49,6 +58,7 @@
 html {
   background: var(--color-bg);
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {

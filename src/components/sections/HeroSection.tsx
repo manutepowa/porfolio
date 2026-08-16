@@ -6,10 +6,6 @@ import { Nodejs } from "../icons/tech/Nodejs"
 import { ReactIcon } from "../icons/tech/ReactIcon"
 import { PayloadCMS } from "../icons/tech/PayloadCMS"
 import { Drupal } from "../icons/tech/Drupal"
-import { TailwindCSS } from "../icons/tech/TailwindCSS"
-import { Neovim } from "../icons/tech/Neovim"
-import { Linux } from "../icons/tech/Linux"
-import { OpenCode } from "../icons/tech/OpenCode"
 
 const techStack = [
   {
@@ -42,38 +38,15 @@ const techStack = [
     url: "https://www.drupal.org/",
     iconClassName: "size-6",
   },
-  {
-    Icon: TailwindCSS,
-    label: "Tailwind CSS",
-    url: "https://tailwindcss.com/",
-    iconClassName: "size-6",
-  },
-  {
-    Icon: Neovim,
-    label: "Neovim",
-    url: "https://neovim.io/",
-    iconClassName: "h-6 w-auto",
-  },
-  {
-    Icon: Linux,
-    label: "Linux",
-    url: "https://www.kernel.org/",
-    iconClassName: "size-6",
-  },
-  {
-    Icon: OpenCode,
-    label: "OpenCode",
-    url: "https://opencode.ai/",
-    iconClassName: "size-6 rounded-sm",
-  },
 ]
 
 type HeroSectionProps = {
+  contactUrl: string,
   identity: Identity,
   hero: Hero,
 }
 
-export function HeroSection({ identity, hero }: HeroSectionProps) {
+export function HeroSection({ contactUrl, identity, hero }: HeroSectionProps) {
   const blockRef = useRef<HTMLDivElement>(null)
   const techIconsRef = useRef<HTMLUListElement>(null)
 
@@ -126,59 +99,91 @@ export function HeroSection({ identity, hero }: HeroSectionProps) {
   }
 
   return (
-    <section className="pb-16 pt-2 sm:pb-20">
-      <div className="mb-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-        <Avatar identity={identity} />
-        <ul
-          ref={techIconsRef}
-          className="t-avatar-group flex flex-wrap items-center gap-2 sm:flex-nowrap sm:gap-3"
-          aria-label="Tecnologías principales"
-          onMouseLeave={() => setTechIconShifts(null, "out")}
-        >
-          {techStack.map(({ Icon, label, url, iconClassName }, i) => (
-            <li
-              key={label}
-              className="t-avatar flex size-8 items-center justify-center rounded-md border border-ink/10 bg-surface/60"
-              onMouseEnter={() => setTechIconShifts(i, "in")}
+    <section className="scroll-mt-24 pb-20 sm:pb-28" id="inicio">
+      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-16">
+        <div ref={blockRef} className="t-stagger max-w-3xl">
+          <p className="t-stagger-line t-stagger-line--1 font-mono text-sm text-ink-dim">
+            <span className="text-accent">{">"}</span>{" "}
+            <span>
+              {identity.nickname}@{identity.location.city.toLowerCase()}
+            </span>
+            <span className="text-ink-dim">:~$ </span>
+            <span className="text-ink">whoami</span>
+          </p>
+
+          <h1 className="t-stagger-line t-stagger-line--1 mt-5 font-pixel text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl lg:text-6xl">
+            {identity.name}
+          </h1>
+
+          <p className="t-stagger-line t-stagger-line--1 mt-4 max-w-2xl font-mono text-base leading-relaxed tracking-tight text-ink-dim sm:text-lg">
+            {identity.role}
+          </p>
+
+          <p className="t-stagger-line t-stagger-line--2 mt-8 max-w-2xl text-lg leading-8 text-ink sm:text-xl sm:leading-9">
+            {hero.description}
+          </p>
+
+          <div className="t-stagger-line t-stagger-line--2 mt-9 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-mono text-sm">
+            <a
+              className="text-accent transition-colors duration-200 hover:text-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              href="#proyectos"
             >
-              <a
-                href={url}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`Abrir la página oficial de ${label}`}
-                title={label}
-                className="flex size-full items-center justify-center"
+              Ver proyectos →
+            </a>
+            <span aria-hidden="true" className="text-ink-faint">
+              /
+            </span>
+            <a
+              className="text-ink-dim transition-colors duration-200 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              href={contactUrl}
+            >
+              Escríbeme
+            </a>
+          </div>
+        </div>
+
+        <aside className="border-l border-ink/10 pl-5 lg:mt-1" aria-label="Perfil y herramientas principales">
+          <div className="flex items-center gap-4">
+            <Avatar identity={identity} />
+            <div>
+              <p className="font-mono text-xs tracking-[0.16em] text-accent">
+                FOCUS
+              </p>
+              <p className="mt-1 text-sm leading-6 text-ink-dim">
+                Producto web · IA aplicada · open source
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-7 font-mono text-xs tracking-[0.16em] text-ink-dim">TOOLCHAIN</p>
+          <ul
+            ref={techIconsRef}
+            className="t-avatar-group mt-3 flex flex-wrap items-center gap-2"
+            aria-label="Tecnologías principales"
+            onMouseLeave={() => setTechIconShifts(null, "out")}
+          >
+            {techStack.map(({ Icon, label, url, iconClassName }, i) => (
+              <li
+                key={label}
+                className="t-avatar flex size-8 items-center justify-center rounded-md border border-ink/10 bg-surface/60"
+                onMouseEnter={() => setTechIconShifts(i, "in")}
               >
-                <Icon
-                  className={`${iconClassName} opacity-60 transition-opacity duration-200 hover:opacity-100`}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div ref={blockRef} className="t-stagger max-w-3xl">
-        <p className="t-stagger-line t-stagger-line--1 font-mono text-sm text-ink-faint">
-          <span className="text-accent">{">"}</span>{" "}
-          <span className="text-ink-dim">
-            {identity.nickname}@{identity.location.city.toLowerCase()}
-          </span>
-          <span className="text-ink-faint">:~$ </span>
-          <span className="text-ink">whoami</span>
-        </p>
-
-        <h1 className="t-stagger-line t-stagger-line--1 mt-4 font-mono text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl">
-          {identity.name}
-        </h1>
-
-        <p className="t-stagger-line t-stagger-line--1 mt-2 font-mono text-base leading-relaxed tracking-tight text-ink-dim sm:text-lg">
-          {identity.role}
-        </p>
-
-        <p className="t-stagger-line t-stagger-line--2 mt-8 max-w-2xl text-lg leading-8 text-ink sm:text-xl sm:leading-9">
-          {hero.description}
-        </p>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Abrir la página oficial de ${label}`}
+                  title={label}
+                  className="flex size-full items-center justify-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                >
+                  <Icon
+                    className={`${iconClassName} opacity-60 transition-opacity duration-200 hover:opacity-100`}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </section>
   )

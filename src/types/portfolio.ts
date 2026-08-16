@@ -26,9 +26,6 @@ export type Seo = {
 }
 
 export type Hero = {
-  eyebrow: string
-  greeting: string
-  headline: string
   description: string
 }
 
@@ -40,13 +37,29 @@ export type Project = {
   description: string
   tags: string[]
   captures?: ProjectCapture[]
-  featured?: boolean
 }
 
 export type ProjectCapture = {
   src: string
   alt: string
   caption?: string
+}
+
+type OpenSourceProject = {
+  id: string
+  name: string
+  description: string
+  repositoryUrl: string
+  packageUrl?: string
+  installCommand?: string
+  tags: string[]
+  license: string
+  status: "active" | "maintenance" | "archived"
+}
+
+export type OpenSource = {
+  profileUrl: string
+  projects: OpenSourceProject[]
 }
 
 export type TimelineEntry = {
@@ -69,8 +82,8 @@ export type PortfolioConfig = {
   identity: Identity
   seo: Seo
   hero: Hero
-  social: Record<string, ExternalLink>
   projects: Project[]
+  openSource: OpenSource
   experience: TimelineEntry[]
   education: TimelineEntry[]
   contact: Contact
