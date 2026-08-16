@@ -100,8 +100,11 @@ export function HeroSection({ contactUrl, identity, hero }: HeroSectionProps) {
 
   return (
     <section className="scroll-mt-24 pb-20 sm:pb-28" id="inicio">
-      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-16">
-        <div ref={blockRef} className="t-stagger max-w-3xl">
+      <div
+        ref={blockRef}
+        className="t-stagger grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_16rem] lg:grid-rows-[auto_auto_1fr] lg:gap-x-16 lg:gap-y-0"
+      >
+        <div className="max-w-3xl lg:col-start-1 lg:row-start-1">
           <p className="t-stagger-line t-stagger-line--1 font-mono text-sm text-ink-dim">
             <span className="text-accent">{">"}</span>{" "}
             <span>
@@ -110,39 +113,12 @@ export function HeroSection({ contactUrl, identity, hero }: HeroSectionProps) {
             <span className="text-ink-dim">:~$ </span>
             <span className="text-ink">whoami</span>
           </p>
-
-          <h1 className="t-stagger-line t-stagger-line--1 mt-5 font-pixel text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
-            {identity.name}
-          </h1>
-
-          <p className="t-stagger-line t-stagger-line--1 mt-4 max-w-2xl font-mono text-base leading-relaxed tracking-tight text-ink-dim sm:text-lg">
-            {identity.role}
-          </p>
-
-          <p className="t-stagger-line t-stagger-line--2 mt-8 max-w-2xl text-lg leading-8 text-ink sm:text-xl sm:leading-9">
-            {hero.description}
-          </p>
-
-          <div className="t-stagger-line t-stagger-line--2 mt-9 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-mono text-sm">
-            <a
-              className="text-accent transition-colors duration-200 hover:text-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-              href="#proyectos"
-            >
-              Ver proyectos →
-            </a>
-            <span aria-hidden="true" className="text-ink-faint">
-              /
-            </span>
-            <a
-              className="text-ink-dim transition-colors duration-200 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-              href={contactUrl}
-            >
-              Escríbeme
-            </a>
-          </div>
         </div>
 
-        <aside className="border-l border-ink/10 pl-5 lg:mt-1" aria-label="Perfil y herramientas principales">
+        <aside
+          className="border-l border-ink/10 pl-5 lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:mt-1"
+          aria-label="Perfil y herramientas principales"
+        >
           <div className="flex items-center gap-4">
             <Avatar identity={identity} />
             <div>
@@ -184,6 +160,40 @@ export function HeroSection({ contactUrl, identity, hero }: HeroSectionProps) {
             ))}
           </ul>
         </aside>
+
+        <div className="max-w-3xl lg:col-start-1 lg:row-start-2">
+          <h1 className="t-stagger-line t-stagger-line--1 font-pixel text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
+            {identity.name}
+          </h1>
+
+          <p className="t-stagger-line t-stagger-line--1 mt-4 max-w-2xl font-mono text-base leading-relaxed tracking-tight text-ink-dim sm:text-lg">
+            {identity.role}
+          </p>
+        </div>
+
+        <div className="max-w-3xl lg:col-start-1 lg:row-start-3">
+          <p className="t-stagger-line t-stagger-line--2 max-w-2xl text-lg leading-8 text-ink sm:text-xl sm:leading-9 lg:mt-8">
+            {hero.description}
+          </p>
+
+          <div className="t-stagger-line t-stagger-line--2 mt-9 flex flex-wrap items-baseline gap-x-3 gap-y-2 font-mono text-sm">
+            <a
+              className="text-accent transition-colors duration-200 hover:text-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              href="#proyectos"
+            >
+              Ver proyectos →
+            </a>
+            <span aria-hidden="true" className="text-ink-faint">
+              /
+            </span>
+            <a
+              className="text-ink-dim transition-colors duration-200 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              href={contactUrl}
+            >
+              Escríbeme
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )
