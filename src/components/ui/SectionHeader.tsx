@@ -8,7 +8,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
       <span aria-hidden="true" className="font-mono text-sm text-accent">
         {"//"}
       </span>
-      <h2 className="font-pixel text-lg tracking-tight text-ink sm:text-xl">
+      <h2 className="font-pixel text-xl tracking-tight text-ink sm:text-2xl">
         {title}
       </h2>
       <span aria-hidden="true" className="h-px flex-1 bg-ink/10" />

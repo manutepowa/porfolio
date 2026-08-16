@@ -135,7 +135,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                   <p className="mb-2 font-mono text-xs tracking-[0.14em] text-ink-dim">
                     {project.year} · PROYECTO
                   </p>
-                  <h3 className="text-lg font-semibold tracking-tight sm:text-xl">
+                  <h3 className="text-base font-semibold tracking-tight sm:text-lg">
                     <ExternalLink label={project.name} url={project.url} />
                   </h3>
                   <p className="mt-4 max-w-3xl text-base leading-8 text-ink-dim">
