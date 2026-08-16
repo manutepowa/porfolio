@@ -24,7 +24,7 @@ export function TimelineItem({ entry }: TimelineItemProps) {
             </span>
           )}
         </div>
-        <h3 className="text-lg font-semibold tracking-tight text-ink">
+        <h3 className="text-base font-semibold tracking-tight text-ink">
           {entry.role}
         </h3>
       </div>

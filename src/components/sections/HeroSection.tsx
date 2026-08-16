@@ -111,7 +111,7 @@ export function HeroSection({ contactUrl, identity, hero }: HeroSectionProps) {
             <span className="text-ink">whoami</span>
           </p>
 
-          <h1 className="t-stagger-line t-stagger-line--1 mt-5 font-pixel text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl lg:text-6xl">
+          <h1 className="t-stagger-line t-stagger-line--1 mt-5 font-pixel text-4xl leading-[1.08] tracking-[-0.02em] text-ink sm:text-5xl">
             {identity.name}
           </h1>
 

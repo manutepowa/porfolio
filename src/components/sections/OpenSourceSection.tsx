@@ -35,7 +35,7 @@ export function OpenSourceSection({ openSource }: OpenSourceSectionProps) {
                 </span>{" "}
                 · {project.license}
               </p>
-              <h3 className="font-pixel text-lg tracking-tight text-ink sm:text-xl">
+              <h3 className="font-pixel text-base tracking-tight text-ink sm:text-lg">
                 {project.name}
               </h3>
               <p className="mt-4 max-w-2xl text-base leading-8 text-ink-dim">
