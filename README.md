@@ -1,6 +1,6 @@
 <h1 align="center">Vite 6 - React 18 - Typescript - Tailwind 4 - Eslint 9 - prettier</h1>
 
-### Installation
+### Porfolio
 
 Clone this repo and install all dependencies  
 `npm install`
