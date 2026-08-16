@@ -8,15 +8,26 @@ type TimelineSectionProps = {
 }
 
 export function TimelineSection({ experience, education }: TimelineSectionProps) {
-  const entries = [...experience, ...education]
-
   return (
-    <section className="relative py-4 sm:py-8">
-      <SectionHeader title="Experiencia y Formación" />
+    <section className="relative scroll-mt-24 py-4 sm:py-8" id="experiencia">
+      <SectionHeader title="Experiencia" />
+      <p className="mb-4 max-w-2xl text-base leading-7 text-ink-dim sm:text-lg sm:leading-8">
+        Trayectoria construyendo productos, plataformas e integraciones para
+        instituciones, empresas y ecosistemas de innovación.
+      </p>
       <div className="timeline relative">
-        {entries.map((entry) => (
+        {experience.map((entry) => (
           <TimelineItem entry={entry} key={entry.id} />
         ))}
+      </div>
+
+      <div className="mt-16 sm:mt-24">
+        <SectionHeader title="Formación" />
+        <div className="timeline relative">
+          {education.map((entry) => (
+            <TimelineItem entry={entry} key={entry.id} />
+          ))}
+        </div>
       </div>
     </section>
   )

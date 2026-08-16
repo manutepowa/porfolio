@@ -1,21 +1,21 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="16" fill="#030712"/>
+  <rect width="64" height="64" rx="16" fill="#0c0a09"/>
   <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#border)" stroke-opacity="0.65" stroke-width="2"/>
   <path d="M15 44V20H21.2L32 35.6L42.8 20H49V44H42.7V30.4L33.7 43H30.3L21.3 30.4V44H15Z" fill="url(#mark)"/>
   <path d="M18 50H46" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
   <defs>
     <linearGradient id="border" x1="8" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E5E7EB"/>
-      <stop offset="1" stop-color="#374151"/>
+      <stop stop-color="#f5f5f4"/>
+      <stop offset="1" stop-color="#57534e"/>
     </linearGradient>
     <linearGradient id="mark" x1="15" y1="20" x2="50" y2="45" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9CA3AF"/>
-      <stop offset="0.45" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#9CA3AF"/>
+      <stop stop-color="#a8a29e"/>
+      <stop offset="0.45" stop-color="#f5f5f4"/>
+      <stop offset="1" stop-color="#a8a29e"/>
     </linearGradient>
     <linearGradient id="accent" x1="18" y1="50" x2="46" y2="50" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ff4d00"/>
-      <stop offset="1" stop-color="#ff6a1f"/>
+      <stop stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fbbf24"/>
     </linearGradient>
   </defs>
 </svg>
