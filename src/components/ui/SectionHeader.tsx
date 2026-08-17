@@ -5,7 +5,10 @@ type SectionHeaderProps = {
 export function SectionHeader({ title }: SectionHeaderProps) {
   return (
     <header className="mb-8 flex items-baseline gap-3 sm:mb-10">
-      <span aria-hidden="true" className="font-mono text-sm text-accent">
+      <span
+        aria-hidden="true"
+        className="relative -top-0.5 font-mono text-sm text-accent"
+      >
         {"//"}
       </span>
       <h2 className="font-pixel text-xl tracking-tight text-ink sm:text-2xl">

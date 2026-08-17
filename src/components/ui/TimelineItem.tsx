@@ -10,7 +10,7 @@ export function TimelineItem({ entry }: TimelineItemProps) {
   const additionalHighlights = entry.highlights?.slice(3) ?? []
 
   return (
-    <article className="timeline-item relative grid gap-3 border-b border-ink/10 py-9 pr-0 last:border-b-0 md:grid-cols-[minmax(0,1fr)_9rem] md:gap-8 md:pr-16 md:py-10">
+    <article className="timeline-item relative grid gap-3 border-t border-ink/10 py-9 pr-0 md:grid-cols-[minmax(0,1fr)_9rem] md:gap-8 md:pr-16 md:py-10">
       <div>
         <div className="mb-1">
           {entry.organizationUrl ? (
